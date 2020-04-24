@@ -1,0 +1,140 @@
+/* @font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto/Roboto-Regular.ttf');
+} */
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  top: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10000;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.header a {
+  padding: 16px;
+  color: white;
+  background-color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header a.active {
+  color: black;
+  background-color: #ffffff;
+}
+
+.content {
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+.dashboard-content {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+}
+
+.customers-content {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+}
+
+.widget-container {
+  width: 100%;
+}
+
+.card-container {
+  margin-top: 20px;
+  height: 320px;
+  box-shadow: 1px 1px 5px 0px #ccc;
+}
+
+.addon-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addon-item img {
+  background-color: #999999;
+}
+
+.addon-item label {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.dot {
+  width: .625rem;
+  height: .625rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.legend-cont {
+  /* margin-right: 50px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+}
+
+.form-field-cont {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.form-field-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+.customers-search {
+  padding-left: 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.customers-search>div,
+.customers-search>button {
+  margin-right: 15px;
+}
+
+input[type='text'] {
+  width: 300px;
+}
